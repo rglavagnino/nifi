@@ -10,6 +10,7 @@ services:
         networks:
             - nifired
         volumes:
+            - /home/ia-dev/lake/nifi/home:/home/nifi
             - /home/ia-dev/lake/nifi/nifi-database_repository:/opt/nifi/nifi-current/database_repository
             - /home/ia-dev/lake/nifi/nifi-flowfile_repository:/opt/nifi/nifi-current/flowfile_repository
             - /home/ia-dev/lake/nifi/nifi-content_repository:/opt/nifi/nifi-current/content_repository
